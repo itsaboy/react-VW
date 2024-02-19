@@ -40,7 +40,7 @@ export default function Header() {
           <span className="sr-only">Your Company</span>
           <img className="h-8 w-auto" src="/icons/void-warrior.svg" alt="" />
         </div>
-        <div className="flex flex-1 justify-end">
+        <div className="lg:flex flex-1 justify-end hidden">
           <Link
             at="/"
             className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-400"
