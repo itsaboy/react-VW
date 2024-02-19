@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import Home from "./components/Home.jsx";
+import Download from "./components/Download.jsx";
 
 import "./index.css";
 
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
+      {
+        path: "/downloads",
+        index: true,
+        element: <Download />,
+      }
     ],
   },
 ]);
