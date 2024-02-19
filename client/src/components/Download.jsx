@@ -18,6 +18,7 @@ export default function Download() {
               src="/images/void-rogue.webp"
               alt=""
               className="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem] shadow-lg shadow-red-500 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-red-500"
+              loading="lazy"
             />
           </div>
           <div className="w-full lg:max-w-xl lg:flex-auto">
@@ -58,12 +59,18 @@ export default function Download() {
                 </li>
               ))}
             </ul>
-            <div className="mt-8 flex border-t border-gray-100 pt-8">
+            <div className="mt-8 flex justify-evenly border-t border-gray-100 pt-8">
               <a
                 href="#"
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
                 Previous versions <span aria-hidden="true">&rarr;</span>
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
+              >
+                Changelog <span aria-hidden="true">&rarr;</span>
               </a>
             </div>
           </div>

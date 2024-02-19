@@ -4,7 +4,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
-export default function Example() {
+export default function Info() {
   return (
     <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
@@ -75,6 +75,7 @@ export default function Example() {
             className="place-self-start mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-12 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-8 shadow-lg shadow-red-500 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-red-500"
             src="/images/void-barb.webp"
             alt=""
+            loading="lazy"
           />
         </div>
       </div>

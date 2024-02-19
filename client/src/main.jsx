@@ -6,6 +6,7 @@ import App from "./App.jsx";
 import Home from "./components/Home.jsx";
 import Download from "./components/Download.jsx";
 import Info from "./components/Info.jsx";
+import Support from "./components/Support.jsx";
 
 import "./index.css";
 
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
         path: "/info",
         index: true,
         element: <Info />,
+      },
+      {
+        path: "/support",
+        index: true,
+        element: <Support />,
       },
     ],
   },

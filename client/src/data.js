@@ -1,7 +1,7 @@
 export const NAVIGATION = [
-  { name: "Download", to: "/downloads" },
+  { name: "Downloads", to: "/downloads" },
   { name: "Info", to: "/info" },
-  { name: "Support", to: "/" },
+  { name: "Support", to: "/support" },
 ];
 
 export const DOWNLOADS = [
