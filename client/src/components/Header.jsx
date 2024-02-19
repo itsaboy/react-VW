@@ -3,23 +3,25 @@ import { Link } from "react-router-dom";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const navigation = [
-  { name: "Download", to: "/downloads" },
-  { name: "Info", to: "#" },
-  { name: "Support", to: "#" },
-];
-
+import { NAVIGATION } from "../data";
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-red-950">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <Link key={item.name} to={item.to} className="text-sm font-semibold leading-6 text-gray-300 hover:text-gray-300">
-                {item.name}
+            {NAVIGATION.map((link) => (
+              <Link
+                key={link.name}
+                to={link.to}
+                className="text-sm font-semibold leading-6 text-gray-300 hover:text-gray-300"
+              >
+                {link.name}
               </Link>
             ))}
           </div>
@@ -39,7 +41,10 @@ export default function Header() {
           <img className="h-8 w-auto" src="/icons/void-warrior.svg" alt="" />
         </div>
         <div className="flex flex-1 justify-end">
-          <Link at="/" className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-400">
+          <Link
+            at="/"
+            className="text-sm font-semibold leading-6 text-gray-400 hover:text-gray-400"
+          >
             Home <span aria-hidden="true">&rarr;</span>
           </Link>
         </div>
@@ -73,19 +78,19 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
+                {NAVIGATION.map((link) => (
                   <Link
-                    key={item.name}
-                    at={item.at}
+                    key={link.name}
+                    to={link.to}
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-300 hover:bg-gray-500"
                   >
-                    {item.name}
+                    {link.name}
                   </Link>
                 ))}
               </div>
               <div className="py-6">
                 <Link
-                  at="/"
+                  to="/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-400 hover:bg-gray-100 hover:text-gray-800"
                 >
                   Home

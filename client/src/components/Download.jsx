@@ -1,32 +1,4 @@
-const platforms = [
-  {
-    id: 1,
-    href: "#",
-    description:
-      "Quos sunt ad dolore ullam qui. Enim et quisquam dicta molestias. Corrupti quo voluptatum eligendi autem labore.",
-    version: "Demo version 1.0.2",
-    date: "2021-01-01",
-    platform: "Windows",
-  },
-  {
-    id: 2,
-    href: "#",
-    description:
-      "Et veniam et officia dolorum rerum. Et voluptas consequatur magni sapiente amet voluptates dolorum. Ut porro aut eveniet.",
-    version: "Coming soon...",
-    date: "2021-01-01",
-    platform: "Apple",
-  },
-  {
-    id: 3,
-    href: "#",
-    description:
-      "Veniam ipsam nisi quas architecto eos non voluptatem in nemo. Est occaecati nihil omnis delectus illum est.",
-    version: "Coming soon...",
-    date: "2021-01-01",
-    platform: "Linux",
-  },
-];
+import { DOWNLOADS } from "../data";
 
 export default function Download() {
   return (
@@ -37,7 +9,7 @@ export default function Download() {
             <h2 className="font-medieval text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
               Downloads
             </h2>
-            <p className="mt-6 text-xl leading-8 text-gray-600">
+            <p className="mt-12 text-xl leading-8 text-gray-200">
               Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
               euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus
               sit eu in id.
@@ -51,8 +23,8 @@ export default function Download() {
           <div className="w-full lg:max-w-xl lg:flex-auto">
             <h3 className="sr-only">Download section</h3>
             <ul className="-my-8 divide-y divide-gray-100">
-              {platforms.map((platform) => (
-                <li key={platform.id} className="py-8">
+              {DOWNLOADS.map((data) => (
+                <li key={data.id} className="py-8">
                   <dl className="relative flex flex-wrap gap-x-3">
                     <dt className="sr-only">Platform</dt>
                     <dd className="w-full flex-none text-lg font-semibold tracking-tight text-gray-200">
@@ -65,11 +37,11 @@ export default function Download() {
                     </dd>
                     <dt className="sr-only">Windows</dt>
                     <dd className="mt-4 w-full flex-none text-base leading-7 text-gray-400">
-                      Last update: {platform.date}
+                      Last update: {data.date}
                     </dd>
                     <dt className="sr-only">Apple</dt>
                     <dd className="mt-4 text-base font-semibold leading-7 text-gray-200">
-                      {platform.version}
+                      {data.version}
                     </dd>
                     <dt className="sr-only">Linux</dt>
                     <dd className="mt-4 flex items-center gap-x-3 text-base leading-7 text-gray-500">
@@ -80,7 +52,7 @@ export default function Download() {
                       >
                         <circle cx={1} cy={1} r={1} />
                       </svg>
-                      {platform.platform}
+                      {data.platform}
                     </dd>
                   </dl>
                 </li>
