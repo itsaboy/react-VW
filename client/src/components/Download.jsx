@@ -16,7 +16,7 @@ export default function Download() {
             </p>
             <img
               src="/images/void-rogue.webp"
-              alt=""
+              alt="A rogue assassin in space"
               className="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem] shadow-lg shadow-red-500 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-red-500"
               loading="lazy"
             />
