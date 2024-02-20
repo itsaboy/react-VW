@@ -1,6 +1,13 @@
+import { useState } from "react";
+
 import BugReport from "./BugReport";
+import ContactMe from "./ContactMe";
+import Donate from "./Donate";
 
 export default function Support() {
+  const [contactMeOpen, setContactMeOpen] = useState(false);
+  const [donateOpen, setDonateOpen] = useState(false);
+
   return (
     <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-12">
       <div className="mx-auto max-w-7xl px-6 py-12 md:py-32">
@@ -24,23 +31,28 @@ export default function Support() {
             <h3 className="sr-only">Support section</h3>
             <BugReport />
             <div className="mt-8 flex border-t border-gray-100 pt-8">
-              <a
-                href="#"
+              <button
+                onClick={() => setContactMeOpen(true)}
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
                 Contact me <span aria-hidden="true">&rarr;</span>
-              </a>
+              </button>
             </div>
             <div className="mt-8 flex border-t border-gray-100 pt-8">
-              <a
-                href="#"
+              <button
+                onClick={() => setDonateOpen(true)}
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
                 Donate <span aria-hidden="true">&rarr;</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
+        <ContactMe
+          contactMeOpen={contactMeOpen}
+          setContactMeOpen={setContactMeOpen}
+        />
+        <Donate donateOpen={donateOpen} setDonateOpen={setDonateOpen} />
       </div>
     </div>
   );
