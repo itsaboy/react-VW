@@ -17,8 +17,7 @@ export default function Support() {
             <img
               src="/images/void-king.webp"
               alt="An old king in space"
-              className="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-50 object-cover lg:aspect-auto lg:h-[34.5rem] shadow-lg shadow-red-500 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-red-500"
-              loading="lazy"
+              className="mt-16 aspect-[6/5] w-full rounded-2xl bg-gray-900 object-cover lg:aspect-auto lg:h-[34.5rem] shadow-lg shadow-red-500 transition duration-300 hover:ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-red-500"
             />
           </div>
           <div className="w-full lg:max-w-xl lg:flex-auto">
