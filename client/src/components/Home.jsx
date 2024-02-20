@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <div className="bg-red-950">
-      <div className="relative isolate overflow-hidden bg-gradient-to-b from-red-950 to-gray-950 pt-14">
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-red-950 to-gray-950 pt-14 px-6 lg:px-12">
         <div
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gradient-to-b from-gray-800 to-gray-950 sm:-mr-80 lg:-mr-96"
           aria-hidden="true"

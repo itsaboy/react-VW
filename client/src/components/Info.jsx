@@ -16,8 +16,8 @@ export default function Info() {
   const [roadmapOpen, setRoadmapOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl px-6 py-32 lg:px-8">
+    <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-12">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-32">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8 text-gray-700">
           <h1 className="font-medieval max-w-2xl text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl lg:col-span-2 xl:col-auto">
             Information

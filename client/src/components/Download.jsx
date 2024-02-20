@@ -10,8 +10,8 @@ export default function Download() {
   const [changeLogOpen, setChangeLogOpen] = useState(false);
 
   return (
-    <div className="bg-gradient-to-t from-gray-950 to-red-950 py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-12">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:py-32">
         <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
           <div className="w-full lg:max-w-lg lg:flex-auto">
             <h2 className="font-medieval text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">
