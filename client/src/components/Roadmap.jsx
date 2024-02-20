@@ -52,10 +52,10 @@ export default function Roadmap({ roadmapOpen, setRoadmapOpen }) {
                       as="h3"
                       className="text-base font-semibold leading-6 text-gray-400"
                     >
-                      Changelog
+                      Roadmap Info
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                      Content
+                    <p className="text-red-200">Info about future updates, etc etc</p>
                     </div>
                   </div>
                 </div>

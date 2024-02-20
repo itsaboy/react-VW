@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
+  FolderArrowDownIcon,
+  CursorArrowRippleIcon,
+  MapIcon
 } from "@heroicons/react/20/solid";
 
 import Install from "./Install";
@@ -39,41 +39,50 @@ export default function Info() {
               </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-400">
                 <li className="flex gap-x-3">
-                  <CloudArrowUpIcon
+                  <FolderArrowDownIcon
                     className="mt-1 h-5 w-5 flex-none text-gray-600"
                     aria-hidden="true"
                   />
                   <span>
-                    <strong className="font-semibold text-red-600">
-                      installation guide.
-                    </strong>{" "}
+                    <button
+                      className="font-semibold text-red-600"
+                      onClick={() => setInstallOpen(true)}
+                    >
+                      Installation guide
+                    </button>{" "}
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Maiores impedit perferendis suscipit eaque, iste dolor
                     cupiditate blanditiis ratione.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <LockClosedIcon
+                  <CursorArrowRippleIcon
                     className="mt-1 h-5 w-5 flex-none text-gray-600"
                     aria-hidden="true"
                   />
                   <span>
-                    <strong className="font-semibold text-red-600">
-                      Game controls.
-                    </strong>{" "}
+                    <button
+                      className="font-semibold text-red-600"
+                      onClick={() => setControlsOpen(true)}
+                    >
+                      Game controls
+                    </button>{" "}
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
                     qui lorem cupidatat commodo.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <ServerIcon
+                  <MapIcon
                     className="mt-1 h-5 w-5 flex-none text-gray-600"
                     aria-hidden="true"
                   />
                   <span>
-                    <strong className="font-semibold text-red-600">
-                      Roadmap information.
-                    </strong>{" "}
+                    <button
+                      className="font-semibold text-red-600"
+                      onClick={() => setRoadmapOpen(true)}
+                    >
+                      Roadmap info
+                    </button>{" "}
                     Ac tincidunt sapien vehicula erat auctor pellentesque
                     rhoncus. Et magna sit morbi lobortis.
                   </span>
@@ -87,6 +96,12 @@ export default function Info() {
             alt="A warrior in space"
           />
         </div>
+        <Install installOpen={installOpen} setInstallOpen={setInstallOpen} />
+        <Controls
+          controlsOpen={controlsOpen}
+          setControlsOpen={setControlsOpen}
+        />
+        <Roadmap roadmapOpen={roadmapOpen} setRoadmapOpen={setRoadmapOpen} />
       </div>
     </div>
   );

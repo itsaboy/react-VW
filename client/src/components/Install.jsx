@@ -52,10 +52,10 @@ export default function Install({ installOpen, setInstallOpen }) {
                       as="h3"
                       className="text-base font-semibold leading-6 text-gray-400"
                     >
-                      Changelog
+                      Installation Guide
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                      Content
+                      <p className="text-red-200">Installation instructions</p>
                     </div>
                   </div>
                 </div>
