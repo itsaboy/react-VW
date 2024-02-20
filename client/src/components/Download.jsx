@@ -1,6 +1,14 @@
+import { useState } from "react";
+
+import ChangeLog from "./ChangeLog";
+import PreviousVersions from "./PreviousVersions";
+
 import { DOWNLOADS } from "../data";
 
 export default function Download() {
+  const [previousVersionOpen, setPreviousVersionOpen] = useState(false);
+  const [changeLogOpen, setChangeLogOpen] = useState(false);
+
   return (
     <div className="bg-gradient-to-t from-gray-950 to-red-950 py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -29,7 +37,7 @@ export default function Download() {
                     <dt className="sr-only">Platform</dt>
                     <dd className="w-full flex-none text-lg font-semibold tracking-tight text-gray-200">
                       <a
-                        href="#"
+                        href={data.href}
                         className="rounded-md bg-red-600 px-4 py-2 text-sm font-semibold text-gray-200 shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
                       >
                         Download
@@ -59,21 +67,29 @@ export default function Download() {
               ))}
             </ul>
             <div className="mt-8 flex justify-evenly border-t border-gray-100 pt-8">
-              <a
-                href="#"
+              <button
+                onClick={() => setPreviousVersionOpen(true)}
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
                 Previous versions <span aria-hidden="true">&rarr;</span>
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
+                onClick={() => setChangeLogOpen(true)}
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
                 Changelog <span aria-hidden="true">&rarr;</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
+        <PreviousVersions
+          previousVersionOpen={previousVersionOpen}
+          setPreviousVersionOpen={setPreviousVersionOpen}
+        />
+        <ChangeLog
+          changeLogOpen={changeLogOpen}
+          setChangeLogOpen={setChangeLogOpen}
+        />
       </div>
     </div>
   );

@@ -1,10 +1,20 @@
+import { useState } from "react";
+
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
 } from "@heroicons/react/20/solid";
 
+import Install from "./Install";
+import Controls from "./Controls";
+import Roadmap from "./Roadmap";
+
 export default function Info() {
+  const [installOpen, setInstallOpen] = useState(false);
+  const [controlsOpen, setControlsOpen] = useState(false);
+  const [roadmapOpen, setRoadmapOpen] = useState(false);
+
   return (
     <div className="bg-gradient-to-t from-gray-950 to-red-950 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl px-6 py-32 lg:px-8">

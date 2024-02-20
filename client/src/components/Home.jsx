@@ -1,6 +1,11 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import ChangeLog from "./ChangeLog";
+
 export default function Home() {
+  const [changeLogOpen, setChangeLogOpen] = useState(false);
+
   return (
     <div className="bg-red-950">
       <div className="relative isolate overflow-hidden bg-gradient-to-b from-red-950 to-gray-950 pt-14">
@@ -27,12 +32,12 @@ export default function Home() {
                 >
                   Download
                 </Link>
-                <a
-                  href="#"
+                <button
                   className="text-sm font-semibold leading-6 text-gray-400"
+                  onClick={() => setChangeLogOpen(true)}
                 >
                   Changelog <span aria-hidden="true">→</span>
-                </a>
+                </button>
               </div>
             </div>
             <img
@@ -42,6 +47,7 @@ export default function Home() {
             />
           </div>
         </div>
+        <ChangeLog changeLogOpen={changeLogOpen} setChangeLogOpen={setChangeLogOpen} />
       </div>
     </div>
   );
