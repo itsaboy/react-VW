@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { NewspaperIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { CursorArrowRippleIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Controls({ controlsOpen, setControlsOpen }) {
   return (
@@ -42,7 +42,7 @@ export default function Controls({ controlsOpen, setControlsOpen }) {
                 </div>
                 <div className="sm:flex sm:items-start">
                   <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <NewspaperIcon
+                    <CursorArrowRippleIcon
                       className="h-6 w-6 text-red-800"
                       aria-hidden="true"
                     />
@@ -55,7 +55,20 @@ export default function Controls({ controlsOpen, setControlsOpen }) {
                       Game Controls
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                    <p className="text-red-200">info about game controls</p>
+                    <h4 className="text-red-200 font-semibold">Movement:</h4>
+                    <p className="text-gray-300">W - Up</p>
+                    <p className="text-gray-300">A - Left</p>
+                    <p className="text-gray-300">S - Down</p>
+                    <p className="text-gray-300">D - Right</p>
+                    <p className="text-gray-300">Left Shift (hold) - Run</p>
+                    <h4 className="text-red-200 font-semibold mt-2">Interaction:</h4>
+                    <p className="text-gray-300">Left Mouse Button - Attack, Select</p>
+                    <h4 className="text-red-200 font-semibold mt-2">Replenish:</h4>
+                    <p className="text-gray-300">R - Health</p>
+                    <p className="text-gray-300">F - Energy</p>
+                    <p className="text-red-200">Note: Player must not be moving to replenish</p>
+                    <h4 className="text-red-200 font-semibold mt-2">Menu:</h4>
+                    <p className="text-gray-300">E (hold) - Open EXP Menu</p>
                     </div>
                   </div>
                 </div>

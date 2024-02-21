@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { NewspaperIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { MapIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Roadmap({ roadmapOpen, setRoadmapOpen }) {
   return (
@@ -42,7 +42,7 @@ export default function Roadmap({ roadmapOpen, setRoadmapOpen }) {
                 </div>
                 <div className="sm:flex sm:items-start">
                   <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <NewspaperIcon
+                    <MapIcon
                       className="h-6 w-6 text-red-800"
                       aria-hidden="true"
                     />
@@ -55,7 +55,7 @@ export default function Roadmap({ roadmapOpen, setRoadmapOpen }) {
                       Roadmap Info
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                    <p className="text-red-200">Info about future updates, etc etc</p>
+                    <p className="text-red-200">The next big update involves a complete overhaul of most of the UI and should be ready for production by the end of this summer.</p>
                     </div>
                   </div>
                 </div>

@@ -40,9 +40,7 @@ export default function Info() {
                     >
                       Installation guide
                     </button>{" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
+                    Kickstart your adventure with our easy-to-follow installation guide.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -57,8 +55,7 @@ export default function Info() {
                     >
                       Game controls
                     </button>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
+                    Master the controls and become a champion of our universe with our comprehensive guide.
                   </span>
                 </li>
                 <li className="flex gap-x-3">
@@ -73,8 +70,7 @@ export default function Info() {
                     >
                       Roadmap info
                     </button>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
+                    Peek behind the curtain with our development roadmap section, where we share our vision for the future of the game.
                   </span>
                 </li>
               </ul>

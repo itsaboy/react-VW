@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { NewspaperIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FolderArrowDownIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Install({ installOpen, setInstallOpen }) {
   return (
@@ -42,7 +42,7 @@ export default function Install({ installOpen, setInstallOpen }) {
                 </div>
                 <div className="sm:flex sm:items-start">
                   <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <NewspaperIcon
+                    <FolderArrowDownIcon
                       className="h-6 w-6 text-red-800"
                       aria-hidden="true"
                     />
@@ -55,7 +55,12 @@ export default function Install({ installOpen, setInstallOpen }) {
                       Installation Guide
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                      <p className="text-red-200">Installation instructions</p>
+                      <p className="text-red-200">
+                        {" "}
+                        Use your prefered archive file unpacker tool (WinRAR,
+                        WinZIP, etc.) to extract the game executable, and then
+                        simply double-click to start playing!
+                      </p>
                     </div>
                   </div>
                 </div>
