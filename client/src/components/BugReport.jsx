@@ -27,7 +27,7 @@ export default function BugReport() {
   }
 
   const reportBug = async (input) => {
-    const req = `http://localhost:3030/report?time=${input.time}&report=${input.report}`;
+    const req = `https://voidwarrior.com/report?time=${input.time}&report=${input.report}`;
     const res = await fetch(req);
 
     if (res.status === 200) {
