@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import { CurrencyDollarIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { WrenchIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
-export default function Donate({ donateOpen, setDonateOpen }) {
+export default function SysReq({ donateOpen, setDonateOpen }) {
   return (
     <Transition.Root show={donateOpen} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setDonateOpen}>
@@ -42,7 +42,7 @@ export default function Donate({ donateOpen, setDonateOpen }) {
                 </div>
                 <div className="sm:flex sm:items-start">
                   <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <CurrencyDollarIcon
+                    <WrenchIcon
                       className="h-6 w-6 text-red-800"
                       aria-hidden="true"
                     />
@@ -52,10 +52,13 @@ export default function Donate({ donateOpen, setDonateOpen }) {
                       as="h3"
                       className="text-base font-semibold leading-6 text-gray-400"
                     >
-                      Donate
+                      System Requirements
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                    <p className="text-red-200">donation links</p>
+                      <h4 className="font-semibold text-gray-300">Storage:</h4>
+                      <p className="text-red-200 pb-2">1.3 GBs</p>
+                      <h4 className="font-semibold text-gray-300">Graphics:</h4>
+                      <p className="text-red-200">Vulcan 1.2 support</p>
                     </div>
                   </div>
                 </div>

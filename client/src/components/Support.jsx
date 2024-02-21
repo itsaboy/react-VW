@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import BugReport from "./BugReport";
 import ContactMe from "./ContactMe";
-import Donate from "./Donate";
+import SysReq from "./SysReq";
 
 export default function Support() {
   const [contactMeOpen, setContactMeOpen] = useState(false);
@@ -17,9 +17,7 @@ export default function Support() {
               Support
             </h2>
             <p className="mt-12 text-xl leading-8 text-gray-200">
-              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
-              euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus
-              sit eu in id.
+            We strive to provide a seamless and enjoyable journey, but we understand that sometimes things don't go as planned. Whether it's a technical glitch, have a question, or specifics on system requirements, you'll find everything you need right here.
             </p>
             <img
               src="/images/void-king.webp"
@@ -43,7 +41,7 @@ export default function Support() {
                 onClick={() => setDonateOpen(true)}
                 className="text-sm font-semibold leading-6 text-red-200 hover:text-red-400"
               >
-                Donate <span aria-hidden="true">&rarr;</span>
+                System Requirements <span aria-hidden="true">&rarr;</span>
               </button>
             </div>
           </div>
@@ -52,7 +50,7 @@ export default function Support() {
           contactMeOpen={contactMeOpen}
           setContactMeOpen={setContactMeOpen}
         />
-        <Donate donateOpen={donateOpen} setDonateOpen={setDonateOpen} />
+        <SysReq donateOpen={donateOpen} setDonateOpen={setDonateOpen} />
       </div>
     </div>
   );

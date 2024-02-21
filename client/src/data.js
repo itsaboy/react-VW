@@ -46,7 +46,7 @@ export const CHANGELOG = [
     date: "2023-07-31",
     version: "1.0.2",
     description:
-      "Changes to stage transition trigger areas to fix issue where empty areas of a stage could be seen by the player when the transition is triggered",
+      "Changes to stage transition areas to fix an issue where empty areas of a level could be seen by the player when the transition is triggered",
   },
 ];
 
@@ -64,3 +64,11 @@ export const PREVIOUS_VERSIONS = [
     href: "https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo.zip",
   },
 ];
+
+export const CONTACT_ME = [
+  {
+    id: 1,
+    email: "ultimategauntletdev@gmail.com",
+  },
+
+]

@@ -24,19 +24,9 @@ export default function Info() {
           </h1>
           <div className="max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
             <p className="mt-6 text-xl leading-8 text-gray-200">
-              Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem.
-              At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at
-              vitae feugiat egestas (description of game).
+            In Void Warrior you are the last beacon of hope in a world teetering on the brink of oblivion. It's your destiny to confront the creeping void that threatens to consume all. Engage in strategic turn-based combat that challenges your tactical acumen, with mechanics that are both deeply engaging and accessible to newcomers.
             </p>
             <div className="mt-10 max-w-2xl">
-              <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id. (Lore)
-              </p>
               <ul role="list" className="mt-8 space-y-8 text-gray-400">
                 <li className="flex gap-x-3">
                   <FolderArrowDownIcon

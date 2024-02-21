@@ -2,6 +2,8 @@ import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { EnvelopeIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
+import { CONTACT_ME } from "../data";
+
 export default function ContactMe({ contactMeOpen, setContactMeOpen }) {
   return (
     <Transition.Root show={contactMeOpen} as={Fragment}>
@@ -55,7 +57,14 @@ export default function ContactMe({ contactMeOpen, setContactMeOpen }) {
                       Email
                     </Dialog.Title>
                     <div className="mt-2 grid grid-cols-1 border-t border-gray-100 pt-4">
-                    <p className="text-red-200">email links</p>
+                      {CONTACT_ME.map((email) => (
+                        <p
+                          key={email.id}
+                          className="text-sm font-semibold leading-6 text-red-200 hover:text-gray-300"
+                        >
+                          {email.email}
+                        </p>
+                      ))}
                     </div>
                   </div>
                 </div>

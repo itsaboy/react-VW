@@ -20,10 +20,12 @@ export default function Home() {
             </h1>
             <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
               <p className="text-lg leading-8 text-gray-200">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt
-                sunt. Qui irure qui lorem cupidatat commodo.
+                Embark on an epic journey through shadows and light in Void
+                Warrior, a mesmerizing turn-based 2D JRPG created using the
+                Godot Engine. Set in the mystical realms of darkness and the
+                ethereal planes of existence, Void Warrior invites players to
+                explore a richly woven tapestry of lore, where every choice
+                ignites the path to your destiny.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Link
@@ -47,7 +49,10 @@ export default function Home() {
             />
           </div>
         </div>
-        <ChangeLog changeLogOpen={changeLogOpen} setChangeLogOpen={setChangeLogOpen} />
+        <ChangeLog
+          changeLogOpen={changeLogOpen}
+          setChangeLogOpen={setChangeLogOpen}
+        />
       </div>
     </div>
   );

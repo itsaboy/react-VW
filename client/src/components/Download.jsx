@@ -18,9 +18,7 @@ export default function Download() {
               Downloads
             </h2>
             <p className="mt-12 text-xl leading-8 text-gray-200">
-              Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est
-              euismod lacus. Est non placerat nam arcu. Cras purus nibh cursus
-              sit eu in id.
+            Prepare to step into the void, where darkness and light converge. Void Warrior awaits. Are you ready to forge your legend?
             </p>
             <img
               src="/images/void-rogue.webp"
